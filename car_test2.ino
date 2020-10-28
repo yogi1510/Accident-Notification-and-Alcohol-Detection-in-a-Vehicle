@@ -66,7 +66,7 @@ if(Serial.available() > 0)
     delay(300);
     sim808.println("AT+CMGF=1");    //Sets the GSM Module in Text Mode
      delay(1000);  // Delay of 1 second
-     sim808.println("AT+CMGS=\"+917989856201\"\r"); // Replace x with mobile number
+     sim808.println("AT+CMGS=\"+91xxxxxxxxxx\"\r"); // Replace x with mobile number
      delay(1000);
     sim808.print("http://maps.google.com/maps?q=loc:");
     sim808.print(latitude);
@@ -129,9 +129,3 @@ if(Serial.available() > 0)
  
  }
   }
-
-  
-  
-          
-         
-     
